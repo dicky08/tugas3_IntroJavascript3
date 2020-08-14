@@ -28,7 +28,10 @@ const getMonth = (callback) => {
 
 getMonth((kosong, showCallback) => {
   if (showCallback) {
-    showCallback.map((m) => console.log(m));
+    showCallback.forEach((m) => console.log(m));
+    if (showCallback < 1) {
+      console.log(kosong);
+    }
   } else {
     console.log(kosong.message);
   }
