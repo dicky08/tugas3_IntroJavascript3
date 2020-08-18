@@ -1,24 +1,24 @@
-// Promise
-// 1
-const menyatakan = new Promise((resolve, reject) => {
-    let nanya = 'Gimana kamu mau ga nikah sama aku';
-    if (nanya) {
-        setTimeout(() => {
-            resolve(`Iya aku mau ko nikah sama kamu`);
-        }, 3000);
-    } else {
-        setTimeout(() => {
-            reject(`Yah maaf kamu terlalu baik buat aku`);
-        }, 2000);
-    }
-});
-menyatakan
-    .then(res => console.log(res))
-    .catch(res => console.log(res));
+// // Promise
+// // 1
+// const menyatakan = new Promise((resolve, reject) => {
+//     let nanya = 'Gimana kamu mau ga nikah sama aku';
+//     if (!nanya) {
+//         setTimeout(() => {
+//             resolve(`Iya aku mau ko nikah sama kamu`);
+//         }, 3000);
+//     } else {
+//         setTimeout(() => {
+//             reject(`Yah maaf kamu terlalu baik buat aku`);
+//         }, 2000);
+//     }
+// });
+// menyatakan
+//     .then(res => console.log(res))
+//     .catch(res => console.log(res));
 
 // 2
 let ketemuan = "Gimana malam ini jadi kan kita dinner?";
-ketemuan = true;
+ketemuan = false;
 const janjian = new Promise((resolve, reject) => {
     if (ketemuan) {
         setTimeout(() => {
